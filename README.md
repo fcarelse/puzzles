@@ -1,1 +1,5 @@
 # puzzles
+
+Fibonacci
+
+fizzbuzz
