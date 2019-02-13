@@ -4,7 +4,7 @@ function fib(n){
 	// Only return i after n has counted down
 	return i;
 }
-// 1,1,2,3,5,8,11,19,30,49,79
+// 1,1,2,3,5,8,13,21,34,55
 
 
 // Standard fizzbuzz puzzle

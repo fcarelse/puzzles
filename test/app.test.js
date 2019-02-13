@@ -14,7 +14,7 @@ test('Should evaluate to 1,1,2,3,5,8,13,21,34,55',()=>{
 	expect(fib(9)).toBe(34);
 	expect(fib(10)).toBe(55);
 })
-// 1,1,2,3,5,8,11,19,30,49,79
+// 1,1,2,3,5,8,13,21,34,55
 
 // Expected sequence supplied in the comment below test.
 test('FizzBuzz standard output', ()=>{
