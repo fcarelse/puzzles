@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"test": "jest test/**/*.test.js"
+		"test": "npx jest"
 	},
 	"keywords": [
 		"Fibonacci"
@@ -13,7 +13,7 @@
 	"author": "Francis Carelse",
 	"license": "ISC",
 	"devDependencies": {
-		"jest": "^24.1.0"
+		"jest": "^24.8.0"
 	},
 	"dependencies": {}
 }

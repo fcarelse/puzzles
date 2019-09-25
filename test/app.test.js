@@ -1,5 +1,5 @@
 var assert = require('assert');
-var {fib, fizzbuzz} = require('../src/app.js');
+var {fib, fizzbuzz, fizzbuzz2} = require('../src/app.js');
 
 // Testing fibonacci puzzle solution
 test('Should evaluate to 1,1,2,3,5,8,13,21,34,55',()=>{
@@ -35,3 +35,24 @@ test('FizzBuzz standard output', ()=>{
 	expect(fizzbuzz(15)).toBe('fizzbuzz');
 })
 // 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
+
+// Expected sequence supplied in the comment below test.
+test('FizzBuzz standard output', ()=>{
+	expect(fizzbuzz2(1)).toBe(1);
+	expect(fizzbuzz2(2)).toBe(2);
+	expect(fizzbuzz2(3)).toBe('fizz');
+	expect(fizzbuzz2(4)).toBe(4);
+	expect(fizzbuzz2(5)).toBe('buzz');
+	expect(fizzbuzz2(6)).toBe('fizz');
+	expect(fizzbuzz2(7)).toBe(7);
+	expect(fizzbuzz2(8)).toBe(8);
+	expect(fizzbuzz2(9)).toBe('fizz');
+	expect(fizzbuzz2(10)).toBe('buzz');
+	expect(fizzbuzz2(11)).toBe(11);
+	expect(fizzbuzz2(12)).toBe('fizz');
+	expect(fizzbuzz2(13)).toBe(13);
+	expect(fizzbuzz2(14)).toBe(14);
+	expect(fizzbuzz2(15)).toBe('fizzbuzz');
+})
+// 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
+
