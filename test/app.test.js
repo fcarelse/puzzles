@@ -37,7 +37,7 @@ test('FizzBuzz standard output', ()=>{
 // 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
 
 // Expected sequence supplied in the comment below test.
-test('FizzBuzz standard output', ()=>{
+test('FizzBuzz2 standard output', ()=>{
 	expect(fizzbuzz2(1)).toBe(1);
 	expect(fizzbuzz2(2)).toBe(2);
 	expect(fizzbuzz2(3)).toBe('fizz');
