@@ -1,5 +1,10 @@
 // Standard fibonacci puzzle
 function fib(n){
+	/**
+	 * i: Current value
+	 * j: Previous to last value
+	 * k: Last value
+	 */
 	for(var i=0,j=1,k=0;n--;i=i+j,j=k,k=i);// Semicolon required here
 	// Only return i after n has counted down
 	return i;
