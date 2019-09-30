@@ -33,5 +33,21 @@ function fizzbuzz2(n){
 // 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
 // n=>(n%3?'':'fizz')+(n%5?'':'buzz')||n
 
+const treeBuilder = (
+  data = [],
+  { idKey = "id", parentKey = "parent", childrenKey = "children" } = {}
+) => {
+  const tree = [];
+  const childrenOf = {};
+  data.forEach(item => {
+    const { [idKey]: id, [parentKey]: parentId = 0 } = item;
+    item[childrenKey] = childrenOf[id] = childrenOf[id] || [];
+    ( parentId?
+      childrenOf[parentId]:
+      tree
+		).push(item);
+  });
+  return tree;
+};
 
-module.exports = {fib, fizzbuzz, fizzbuzz2};
+module.exports = {fib, fizzbuzz, fizzbuzz2, treeBuilder};

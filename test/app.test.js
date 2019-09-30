@@ -1,5 +1,5 @@
 var assert = require('assert');
-var {fib, fizzbuzz, fizzbuzz2} = require('../src/app.js');
+var {fib, fizzbuzz, fizzbuzz2, treeBuilder} = require('../src/app.js');
 
 // Testing fibonacci puzzle solution
 test('Should evaluate to 1,1,2,3,5,8,13,21,34,55',()=>{
@@ -56,3 +56,27 @@ test('FizzBuzz2 standard output', ()=>{
 })
 // 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
 
+// Expected sequence supplied in the comment below test.
+test('Tree Builder', ()=>{
+	expect(treeBuilder(testList)).toEqual(testTree);
+})
+// 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
+
+const testList = [
+	{id: 1, parent: false},
+	{id: 2, parent: 1},
+	{id: 3, parent: 2},
+	{id: 4, parent: 3},
+	{id: 5, parent: 1}
+];
+
+const testTree = [
+	{id: 1, parent: false, children: [
+		{id: 2, parent: 1, children: [
+			{id: 3, parent: 2, children: [
+				{id: 4, parent: 3, children: []}
+			]}
+		]},
+		{id: 5, parent: 1, children: []},
+	]}
+];
