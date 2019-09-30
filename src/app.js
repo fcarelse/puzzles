@@ -43,7 +43,7 @@ const treeBuilder = (
 		const { [idKey]: id, [parentKey]: parentId = 0 } = item;
 		item[childrenKey] = childrenOf[id] = childrenOf[id] || [];
 		( parentId?
-			childrenOf[parentId]:
+			(childrenOf[parentId] = childrenOf[parentId] || []):
 			tree
 		).push(item);
 	});

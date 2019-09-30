@@ -58,7 +58,7 @@ test('FizzBuzz2 standard output', ()=>{
 
 // Expected tree in the constants below
 test('Tree Builder', ()=>{
-	expect(treeBuilder(testList)).toEqual(testTree);
+	expect(JSON.stringify(treeBuilder(testList))).toEqual(JSON.stringify(testTree));
 })
 
 const testList = [
