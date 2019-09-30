@@ -56,11 +56,10 @@ test('FizzBuzz2 standard output', ()=>{
 })
 // 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
 
-// Expected sequence supplied in the comment below test.
+// Expected tree in the constants below
 test('Tree Builder', ()=>{
 	expect(treeBuilder(testList)).toEqual(testTree);
 })
-// 1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'
 
 const testList = [
 	{id: 1, parent: false},
