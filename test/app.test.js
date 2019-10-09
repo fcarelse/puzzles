@@ -1,4 +1,3 @@
-var assert = require('assert');
 var {fib, fizzbuzz, fizzbuzz2, treeBuilder} = require('../src/app.js');
 
 // Testing fibonacci puzzle solution
@@ -58,7 +57,7 @@ test('FizzBuzz2 standard output', ()=>{
 
 // Expected tree in the constants below
 test('Tree Builder', ()=>{
-	expect(JSON.stringify(treeBuilder(testList))).toEqual(JSON.stringify(testTree));
+	expect(treeBuilder(testList)).toEqual(testTree);
 })
 
 const testList = [
