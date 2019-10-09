@@ -1,4 +1,4 @@
-# puzzles
+# Puzzles
 
 Fibonacci
 
