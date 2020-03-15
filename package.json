@@ -1,6 +1,6 @@
 {
 	"name": "fibonacci",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "Fibonacci Sequence and fizzbuzz test demo",
 	"main": "index.js",
 	"scripts": {
