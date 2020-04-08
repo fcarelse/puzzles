@@ -13,7 +13,7 @@
 	"author": "Francis Carelse",
 	"license": "ISC",
 	"devDependencies": {
-		"jest": "^24.8.0"
+		"jest": "^25.2.7"
 	},
 	"dependencies": {}
 }
