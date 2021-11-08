@@ -50,4 +50,25 @@ const treeBuilder = (
 	return tree;
 };
 
-module.exports = {fib, fizzbuzz, fizzbuzz2, treeBuilder};
+const prevelentChar = (string) => {
+	// List characters
+	const list = string.split('');
+	
+	// reduce to an object with each unique character mapping to the number of occurences.
+	const occurences = list.reduce((map,char)=>{
+		if(!map[char]) map[char]=0;
+		map[char]++;
+		return map;
+	},{});
+
+	// From a list of unique characters in the string
+	const unique = Object.keys(occurences);
+
+	// Return  the character that has the largest occurence.
+	return unique.reduce((most, next)=>{
+		return occurences[most]>occurences[next]? most: next;
+	})
+}
+
+
+module.exports = {fib, fizzbuzz, fizzbuzz2, treeBuilder, prevelentChar};
