@@ -55,11 +55,11 @@ const prevelentChar = (string) => {
 	const list = string.split('');
 	
 	// reduce to an object with each unique character mapping to the number of occurences.
-	const occurences = list.reduce((map,char)=>{
-		if(!map[char]) map[char]=0;
-		map[char]++;
-		return map;
-	},{});
+	const occurences = {}
+	list.forEach((char)=>{
+		if(!occurences[char]) occurences[char]=0;
+		occurences[char]++;
+	});
 
 	// From a list of unique characters in the string
 	const unique = Object.keys(occurences);
@@ -69,6 +69,5 @@ const prevelentChar = (string) => {
 		return occurences[most]>occurences[next]? most: next;
 	})
 }
-
 
 module.exports = {fib, fizzbuzz, fizzbuzz2, treeBuilder, prevelentChar};
