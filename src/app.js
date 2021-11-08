@@ -50,7 +50,7 @@ const treeBuilder = (
 	return tree;
 };
 
-const prevelentChar = (string) => {
+const prevalentChar = (string) => {
 	// List characters
 	const list = string.split('');
 	
@@ -70,4 +70,4 @@ const prevelentChar = (string) => {
 	})
 }
 
-module.exports = {fib, fizzbuzz, fizzbuzz2, treeBuilder, prevelentChar};
+module.exports = {fib, fizzbuzz, fizzbuzz2, treeBuilder, prevalentChar};

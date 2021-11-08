@@ -1,4 +1,4 @@
-var {fib, fizzbuzz, fizzbuzz2, treeBuilder, prevelentChar} = require('../src/app.js');
+var {fib, fizzbuzz, fizzbuzz2, treeBuilder, prevalentChar} = require('../src/app.js');
 var {testList, testTree} = require('./genTestData.js')
 
 // Testing fibonacci puzzle solution
@@ -61,10 +61,10 @@ test('Tree Builder', ()=>{
 	expect(treeBuilder(testList)).toEqual(testTree);
 })
 
-// Expected to find most prevelent char in string
-test('Prevelent Chars', ()=>{
-	expect(prevelentChar('abcccccccd')).toEqual('c');
-	expect(prevelentChar('1231111')).toEqual('1');
+// Expected to find most prevalent char in string
+test('Prevalent Char', ()=>{
+	expect(prevalentChar('abcccccccd')).toEqual('c');
+	expect(prevalentChar('1231111')).toEqual('1');
 })
 
 
